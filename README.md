@@ -35,74 +35,75 @@ Crie uma nova conta.
      "email": "email",
      "senha": "senha"
    }
-```json
-4. Obter informações de conta
 
-- **URL:** URL: `http://http://localhost:3000/contas
+### 4. Obter informações de conta
 
-5. Atualizar informações da conta.
+- **URL:** `http://http://localhost:3000/contas
 
-URL: http://localhost:3000/contas/1/usuario
+### 5. Atualizar informações da conta.
 
-Método: PUT
+- **URL:** http://localhost:3000/contas/1/usuario
 
-Corpo em JSON:
+- **Método:** PUT
 
-{
-  "nome": "novo_nome",
-  "cpf": "novo_cpf",
-  "data_nascimento": "nova_data",
-  "telefone": "novo_telefone",
-  "email": "novo_email",
-  "senha": "nova_senha"
-}
+    Corpo em JSON:
+    ```json
+    {
+        "nome": "novo_nome",
+        "cpf": "novo_cpf",
+        "data_nascimento": "nova_data",
+        "telefone": "novo_telefone",
+        "email": "novo_email",
+        "senha": "nova_senha"
+    }   
 
-6. DELETE
+### 6. DELETE
 
-URL:http://localhost:3000/contas/0
-Método: DELETE
+- **URL:** http://localhost:3000/contas/0
+- **Método:** DELETE
 
-7. Transferir
+### 7. Transferir
 
-URL: http://localhost:3000/transacoes/transferir
+- **URL:** http://localhost:3000/transacoes/transferir
 
-Método: POST
+- **Método:** POST
 
-Corpo em JSON:
+    Corpo em JSON:
+    ```json
+    {
+    "numero_conta_origem": "1",
+    "numero_conta_destino": "0",
+    "valor": 100,
+    "senha": "123"
+    }
 
-{
-  "numero_conta_origem": "1",
-  "numero_conta_destino": "0",
-  "valor": 100,
-  "senha": "123"
-}
+### 8. Sacar
 
-8. Sacar
+- **URL:** http://localhost:3000/transacoes/sacar
 
-URL: http://localhost:3000/transacoes/sacar
+- **Método:** POST
 
-Método: POST
+    Corpo em JSON:
+    ```json
+    {
+    "numero_conta": "0",
+    "valor": 100,
+    "senha": "123"
+    }
 
-Corpo em JSON:
-{
-  "numero_conta": "0",
-  "valor": 100,
-  "senha": "123"
-}
+### 9. Depositar
 
-9. Depositar
+- **URL:** http://localhost:3000/transacoes/depositar
 
-URL: http://localhost:3000/transacoes/depositar
+- **Método:** POST
 
-Método: POST
-
-Corpo em JSON:
-
-{
-  "numero_conta": "0",
-  "valor": 100,
-  "senha": "123"
-}
+    Corpo em JSON:
+    ```json
+    {
+    "numero_conta": "0",
+    "valor": 100,
+    "senha": "123"
+    }
 
 
 Abra o Insônia.
