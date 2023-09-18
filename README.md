@@ -2,7 +2,7 @@
 
 Este documento fornece instruções sobre como testar a API do sistema-bancario usando o Insomnia. Certifique-se de que o servidor esteja em execução usando `npm run dev` antes de iniciar os testes.
 
-## Pontos de Extremidade da API
+## Pontos da API
 
 ### 1. Obter Extrato da Conta
 
